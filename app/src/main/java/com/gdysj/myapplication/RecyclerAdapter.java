@@ -65,7 +65,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     Toast.makeText(mContext, "header view", Toast.LENGTH_SHORT).show();
 
                     EventBus.getDefault().post(1);
-                    Intent intent = new Intent(mContext, KeyStoreActivity.class);
+                    Intent intent = new Intent(mContext, LoginActivity.class);
                     mContext.startActivity(intent);
                 }
             });

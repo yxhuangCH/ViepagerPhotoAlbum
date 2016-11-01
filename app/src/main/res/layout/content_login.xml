@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.gdysj.myapplication.LoginActivity"
+        tools:showIn="@layout/activity_login">
+
+        <EditText
+            android:id="@+id/et_original_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:hint="原始密码"/>
+
+        <Button
+            android:id="@+id/btn_save_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="保存密码"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:hint="请输入密码"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="登  录"/>
+
+        <TextView
+            android:id="@+id/tv_encrypt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="encrypt"/>
+
+        <EditText
+            android:id="@+id/et_delete_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:hint="请输入删除的密码"/>
+
+        <Button
+            android:id="@+id/btn_delete_key"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="删除密码"/>
+
+    </LinearLayout>
+
+</ScrollView>
