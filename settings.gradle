@@ -1,2 +1,2 @@
-include ':app', ':viewpagerindex'
+include ':app', ':viewpagerindex', ':otherdemo', ':pulltorefresh', ':banner', ':areaspinners', ':mpchartlib', ':gesturedemo'
 include ':library'

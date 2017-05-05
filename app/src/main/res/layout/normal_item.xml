@@ -7,6 +7,7 @@
     <TextView
         android:id="@+id/tv_normal"
         android:layout_width="wrap_content"
+        android:text="11111111"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

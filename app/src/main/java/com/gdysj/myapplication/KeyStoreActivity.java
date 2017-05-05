@@ -165,11 +165,6 @@ public class KeyStoreActivity extends AppCompatActivity implements View.OnClickL
                             e.printStackTrace();
                         }
                     }
-                }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
                 })
                 .create();
 

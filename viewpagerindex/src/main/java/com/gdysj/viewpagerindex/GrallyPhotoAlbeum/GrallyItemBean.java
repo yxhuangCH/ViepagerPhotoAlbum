@@ -11,7 +11,6 @@ import java.util.ArrayList;
 public class GrallyItemBean {
     private String mItemContent;
     private String mImageUrl;
-    private int mPosition;
     private ArrayList<String> mContentImageUrlsList;
 
     public ArrayList<String> getContentImageUrlsList() {
@@ -20,14 +19,6 @@ public class GrallyItemBean {
 
     public void setContentImageUrlsList(ArrayList<String> contentImageUrlsList) {
         mContentImageUrlsList = contentImageUrlsList;
-    }
-
-    public int getPosition() {
-        return mPosition;
-    }
-
-    public void setPosition(int position) {
-        mPosition = position;
     }
 
     public String getItemContent() {

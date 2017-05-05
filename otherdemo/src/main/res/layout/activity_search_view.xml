@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_search_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.gdysj.otherdemo.search.SearchViewActivity">
+
+	<android.support.v7.widget.SearchView
+		android:id="@+id/search_view"
+		android:layout_width="match_parent"
+		android:imeOptions="actionSearch"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:iconifiedByDefault="false"
+		android:layout_height="48dp">
+
+	</android.support.v7.widget.SearchView>
+
+	<android.support.v7.widget.AppCompatCheckBox
+		android:layout_below="@id/search_view"
+		android:id="@+id/checkbox"
+		style="@style/MyCheckBox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="选择"/>
+
+	<EditText
+		android:id="@+id/edit"
+		android:layout_width="match_parent"
+		android:layout_marginTop="20dp"
+		android:hint="请输入密码"
+		android:layout_height="48dp"/>
+
+
+
+</LinearLayout>

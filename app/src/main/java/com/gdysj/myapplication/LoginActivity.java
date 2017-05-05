@@ -114,6 +114,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         .setEndDate(end.getTime())
                         .build();
 
+                // https://developer.android.com/reference/java/security/KeyPairGenerator.html
+                // The KeyPairGenerator class is used to generate pairs of public and private keys
                 KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA", "AndroidKeyStore");
                 generator.initialize(spec);
 

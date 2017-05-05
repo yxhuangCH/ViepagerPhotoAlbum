@@ -63,7 +63,6 @@ public class GrallyActivity extends AppCompatActivity implements RecyclerAdapter
         GrallyItemBean bean1 = new GrallyItemBean();
         bean1.setImageUrl("http://img1.3lian.com/2015/w7/85/d/101.jpg");
         bean1.setItemContent("兔子");
-        bean1.setPosition(0);
         bean1.setContentImageUrlsList(list1);
         mList.add(bean1);
 
@@ -75,7 +74,6 @@ public class GrallyActivity extends AppCompatActivity implements RecyclerAdapter
         GrallyItemBean bean2 = new GrallyItemBean();
         bean2.setImageUrl("http://pic54.nipic.com/file/20141126/17961491_093029437000_2.jpg");
         bean2.setItemContent("铁路");
-        bean2.setPosition(2);
         bean2.setContentImageUrlsList(list2);
         mList.add(bean2);
 
@@ -87,7 +85,6 @@ public class GrallyActivity extends AppCompatActivity implements RecyclerAdapter
         GrallyItemBean bean3 = new GrallyItemBean();
         bean3.setImageUrl("http://img5.duitang.com/uploads/item/201512/19/20151219231445_e8VFP.jpeg");
         bean3.setItemContent("美女");
-        bean3.setPosition(3);
         bean3.setContentImageUrlsList(list3);
         mList.add(bean3);
 
@@ -98,7 +95,6 @@ public class GrallyActivity extends AppCompatActivity implements RecyclerAdapter
         GrallyItemBean bean4 = new GrallyItemBean();
         bean4.setImageUrl("http://p2.wmpic.me/article/2015/12/30/1451446087_VEZlIbVy.jpg");
         bean4.setItemContent("沙漠");
-        bean4.setPosition(4);
         bean4.setContentImageUrlsList(list4);
         mList.add(bean4);
 
@@ -109,7 +105,6 @@ public class GrallyActivity extends AppCompatActivity implements RecyclerAdapter
         GrallyItemBean bean5 = new GrallyItemBean();
         bean5.setImageUrl("http://www.people.com.cn/mediafile/pic/20141230/51/6443510296760649455.jpg");
         bean5.setItemContent("宠物");
-        bean5.setPosition(5);
         bean5.setContentImageUrlsList(list5);
         mList.add(bean5);
     }

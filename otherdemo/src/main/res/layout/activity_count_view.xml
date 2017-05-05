@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_count_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.gdysj.otherdemo.countView.CountViewActivity">
+
+	<com.gdysj.otherdemo.countView.CountTextView
+		android:id="@+id/tv_count_view"
+		android:layout_width="wrap_content"
+		android:layout_height="42dp"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/count_view_shape">
+	</com.gdysj.otherdemo.countView.CountTextView>
+
+
+	<com.gdysj.otherdemo.countView.AllCountView
+		android:id="@+id/all_count_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp">
+	</com.gdysj.otherdemo.countView.AllCountView>
+
+
+	<EditText
+		android:id="@+id/edt_input"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"/>
+
+	<Button
+		android:id="@+id/btn_input"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="输入"/>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	tools:context="pay.trip.com.areaspinners.MainActivity">
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="20sp"
+		android:layout_marginTop="30dp"
+		android:text="地址选择器"/>
+
+	<LinearLayout
+		android:layout_below="@id/tv_title"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:weightSum="3"
+		android:layout_height="60dp">
+
+		<Spinner
+			android:id="@+id/spinner_province"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent">
+		</Spinner>
+		<Spinner
+			android:id="@+id/spinner_city"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent">
+		</Spinner>
+		<Spinner
+			android:id="@+id/spinner_district"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent">
+		</Spinner>
+
+	</LinearLayout>
+</RelativeLayout>

@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.gdysj.viewpagerindex.GlideDemo.GlideActivity;
 import com.gdysj.viewpagerindex.GrallyPhotoAlbeum.GrallyActivity;
 import com.viewpagerindicator.IconPageIndicator;
 
@@ -19,7 +20,7 @@ import rx.functions.Action1;
 import static rx.schedulers.Schedulers.start;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ViewPager viewpager;
     private IconPageIndicator icon_page_indicator;
@@ -79,11 +80,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_toGlide = (Button) findViewById(R.id.btn_toGlide);
+        btn_toGlide.setOnClickListener(this);
+
     }
 
     public void stop() {
         if(mViewPagerSubscribe.isUnsubscribed()) {
             mViewPagerSubscribe.unsubscribe();
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_toGlide:
+                Intent intent1 = new Intent(this, GlideActivity.class);
+                startActivity(intent1);
         }
     }
 }
